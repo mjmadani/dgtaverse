@@ -1,3 +1,5 @@
+@import url(/css/fonts/persian-fonts/iransans/IranSans.css);
+
 :root {
   --color-primary: #000000;
   --color-secendary: #757575;
@@ -11,10 +13,11 @@
 html {
   /* 62.5% of 16px = 10px */
   font-size: 62.5%;
+  direction: rtl;
 }
 
 body {
-  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-family: IRANSans, Inter, Arial, Helvetica, sans-serif;
   font-size: 1.4rem;
   line-height: 1.68;
   color: var(--color-body);
@@ -47,6 +50,7 @@ h4 {
 
 p {
   margin-top: 0;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 1024px) {
@@ -84,17 +88,62 @@ a {
 }
 
 .link-arrow::after {
-  content: "-->";
-  margin-left: 5px;
+  content: ">>";
+  margin-right: 5px;
   transition: margin 0.15s;
 }
 
 .link-arrow:hover::after {
-  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.link-classification {
+  background-color: #151515;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  font-weight: normal;
+  white-space: nowrap;
+  font-size: 2rem;
 }
 
 @media screen and (min-width: 1024px) {
   .link-arrow {
     font-size: 1.5rem;
+  }
+
+  .link-classification {
+    font-size: 1.6rem;
+  }
+}
+/* Badges */
+
+.badge {
+  border-radius: 20px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 0.5rem 2rem;
+  white-space: nowrap;
+  color: #fff;
+}
+
+.badge--primary {
+  background: var(--color-primary);
+}
+
+.badge--secondary {
+  background: var(--color-secendary);
+}
+
+.badge--small {
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1024) {
+  .badge {
+    font-size: 1.6rem;
+  }
+
+  .badge--small {
+    font-size: 1.4rem;
   }
 }
