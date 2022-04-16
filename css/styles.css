@@ -144,6 +144,7 @@ a {
 
 .badge--small {
   font-size: 1.6rem;
+  padding: 0.5rem 1.5rem;
 }
 
 @media screen and (min-width: 1024) {
@@ -255,6 +256,7 @@ a {
 
 .btn--block {
   width: 100%;
+  border-radius: 20px;
   /* display: inline-block; */
 }
 
@@ -309,5 +311,96 @@ a {
 @media screen and (min-width: 1024px) {
   .input {
     font-size: 1.4rem;
+  }
+}
+
+/* Cards */
+
+.card {
+  border-radius: 7px;
+  box-shadow: 0 0 20px 10px #f3f3f3;
+  overflow: hidden;
+}
+
+.card__header,
+.card__body {
+  padding: 2rem 3rem;
+}
+
+.card--primary .card__header {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.card--secondary .card__header {
+  background: var(--color-secendary);
+  color: #fff;
+}
+
+.card--secondary .badge--secondary {
+  background: rgb(94, 93, 93);
+}
+
+/* Plans */
+
+.plan__name {
+  color: #fff;
+  margin: 0;
+}
+
+.plan__price {
+  font-size: 6rem;
+}
+
+.plan__des {
+  font-size: 2.4rem;
+}
+
+.plan__billing-cycle {
+  opacity: 0.8;
+  margin-left: 1rem;
+}
+
+.plan__description {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  display: block;
+  margin-top: 1.5rem;
+}
+
+.plan .list__item {
+  margin-bottom: 2rem;
+}
+
+.plan--popular .card__header {
+  position: relative;
+}
+
+.plan--popular .card__header::before {
+  content: url(/css/images/popular.svg);
+  /* width: 40px; */
+  display: inline-block;
+  position: absolute;
+  top: -10px;
+  left: 5%;
+  filter: invert(76%) sepia(100%) saturate(2314%) hue-rotate(358deg)
+    brightness(101%) contrast(104%);
+}
+
+@media screen and (min-width: 1024px) {
+  .plan__name {
+    font-size: 1.4rem;
+  }
+
+  .plan__price {
+    font-size: 5rem;
+  }
+
+  .plan__billing-cycle {
+    font-size: 1.5rem;
+  }
+
+  .plan__description {
+    font-size: 1.7rem;
   }
 }
