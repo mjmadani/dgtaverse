@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>دیجی‌تاورس</title>
+    <meta
+      name="description"
+      content="دیجی‌تاورس رسانه‌ای دیجیتال است که آخرین اخبار و مقالات حوزه هوش مصنوعی و تکنولوژی‌های آینده را به زبان فارسی ارائه می‌دهد"
+    />
+    <title>دیجی‌تاورس - آخرین دستاوردهای هوش مصنوعی</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,6 +17,404 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav class="nav collapsible">
+        <svg class="icon icon--white nav__toggler">
+          <use xlink:href="css/images/sprite.svg#menu"></use>
+        </svg>
+        <a class="nav__link" href="/"
+          ><img
+            class="nav__logo"
+            src="/css/images/LogoWeb.png"
+            alt="website logo"
+        /></a>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item"><a href="#">موضوعات</a></li>
+          <li class="nav__item"><a href="#">درباره ما</a></li>
+          <li class="nav__item"><a href="#">تماس با ما</a></li>
+          <li class="nav__item"><a href="#">خرید اشتراک</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="block block--dark block--skewed-left hero">
+      <div class="container grid grid--1x2">
+        <header class="block__header hero__content">
+          <h1 class="block__heading" data-aos="fade-left">مجله دیجی‌تاورس</h1>
+          <p class="hero__tagline">آینده را همین امروز ببینید</p>
+          <a href="" class="btn btn--block btn--accent btn--stretch"
+            >خرید اشتراک</a
+          >
+        </header>
+        <picture data-aos="zoom-in">
+          <source
+            type="image/webp"
+            srcset="
+              /css/images/banner.webp    1x,
+              /css/images/banner@2x.webp 2x
+            " />
+          <source
+            type="image/png"
+            srcset="/css/images/banner.png 1x, /css/images/banner@2x.png 2x" />
+          <img class="hero__image" src="/css/images/banner.png" alt=""
+        /></picture>
+      </div>
+    </section>
+    <section class="block container block-domain" data-aos="fade-up">
+      <header class="block__header">
+        <h2>هم‌اکنون مشترک یکساله شوید</h2>
+        <p>
+          اگر میخواهید از دیگران عقب نمانید، همین امروز مجله دیجی‌تاورس را برای
+          خود کنید
+        </p>
+      </header>
+      <div class="input-group">
+        <input
+          type="text"
+          class="input"
+          placeholder="عبارت مورد نظر خود را جست‌جو کنید ..."
+        />
+        <button class="btn btn--rectangle btn--accent">
+          <svg class="icon icon--white">
+            <use xlink:href="css/images/sprite.svg#search"></use></svg
+          >بگرد
+        </button>
+      </div>
+      <ul class="list block-domain__prices">
+        <li>
+          <span class="badge badge--primary">ماهانه 20</span>
+        </li>
+        <li>شش ماهه 100</li>
+        <li>سه ماهه 80</li>
+        <li>نه ماهه 120</li>
+        <li>یکساله 300</li>
+        <li>دو ساله 700</li>
+      </ul>
+    </section>
+    <section class="block container block-plans" data-aos="fade-up">
+      <div class="grid grid--1x3">
+        <div class="plan">
+          <div class="card card--secondary">
+            <header class="card__header">
+              <h3 class="plan__name">نسخه کاغذی</h3>
+              <span class="plan__price">420</span>
+              <span class="plan__des">هزار تومان</span>
+              <span class="plan__billing-cycle">سالانه</span>
+              <span class="badge badge--secondary badge--small"
+                >10 درصد تخفیف</span
+              >
+              <span class="plan__description">مناسب برای آرشیو لوکس</span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">مجله را لمس کنید</li>
+                <li class="list__item">آن را به دیگران هدیه بدهید</li>
+                <li class="list__item">آرشیو کتابخانه خود را تخصصی کنید</li>
+              </ul>
+              <button class="btn btn--outline btn--block">
+                همین الان خریداری کنید
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="plan plan--popular">
+          <div class="card card--primary">
+            <header class="card__header">
+              <h3 class="plan__name">نسخه کاغذی</h3>
+              <span class="plan__price">420</span>
+              <span class="plan__des">هزار تومان</span>
+              <span class="plan__billing-cycle">سالانه</span>
+              <span class="badge badge--primary badge--small"
+                >10 درصد تخفیف</span
+              >
+              <span class="plan__description">مناسب برای آرشیو لوکس</span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">مجله را لمس کنید</li>
+                <li class="list__item">آن را به دیگران هدیه بدهید</li>
+                <li class="list__item">آرشیو کتابخانه خود را تخصصی کنید</li>
+              </ul>
+              <button class="btn btn--outline btn--block">
+                همین الان خریداری کنید
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="plan">
+          <div class="card card--secondary">
+            <header class="card__header">
+              <h3 class="plan__name">نسخه کاغذی</h3>
+              <span class="plan__price">420</span>
+              <span class="plan__des">هزار تومان</span>
+              <span class="plan__billing-cycle">سالانه</span>
+              <span class="badge badge--secondary badge--small"
+                >10 درصد تخفیف</span
+              >
+              <span class="plan__description">مناسب برای آرشیو لوکس</span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">مجله را لمس کنید</li>
+                <li class="list__item">آن را به دیگران هدیه بدهید</li>
+                <li class="list__item">آرشیو کتابخانه خود را تخصصی کنید</li>
+              </ul>
+              <button class="btn btn--outline btn--block">
+                همین الان خریداری کنید
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="block container">
+      <header class="block__header">
+        <h2>جلوتر از سایرین حرکت کنید</h2>
+        <p>برای کسب و کار خود سرمایه گذاری کنید</p>
+      </header>
+      <article class="grid grid--1x2 feature">
+        <div class="feature__content" data-aos="fade-left">
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use xlink:href="css/images/sprite.svg#easy"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">نسخه کاغذی</h3>
+          <p>با خرید نسخه کاغذی، طعم مطالعه را مثل یک حرفه‌ای تجربه کنید</p>
+          <a href="#" class="link-arrow">بیشتر بدانید</a>
+        </div>
+        <picture data-aos="zoom-in">
+          <source
+            type="image/webp"
+            srcset="/css/images/easy.webp 1x, /css/images/easy@2x.webp 2x" />
+          <source
+            type="image/jpg"
+            srcset="/css/images/easy.jpg 1x, /css/images/easy@2x.jpg 2x" />
+          <img class="feature__image" src="/css/images/easy@2x.JPG" alt=""
+        /></picture>
+      </article>
+      <article class="grid grid--1x2 feature">
+        <div class="feature__content">
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use xlink:href="css/images/sprite.svg#computer"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">نسخه کاغذی</h3>
+          <p>با خرید نسخه کاغذی، طعم مطالعه را مثل یک حرفه‌ای تجربه کنید</p>
+          <a href="#" class="link-arrow">بیشتر بدانید</a>
+        </div>
+        <picture>
+          <source
+            type="image/webp"
+            srcset="/css/images/easy.webp 1x, /css/images/easy@2x.webp 2x" />
+          <source
+            type="image/jpg"
+            srcset="/css/images/easy.jpg 1x, /css/images/easy@2x.jpg 2x" />
+          <img class="feature__image" src="/css/images/easy@2x.JPG" alt=""
+        /></picture>
+      </article>
+      <article class="grid grid--1x2 feature">
+        <div class="feature__content">
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use xlink:href="css/images/sprite.svg#wordpress"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">نسخه کاغذی</h3>
+          <p>با خرید نسخه کاغذی، طعم مطالعه را مثل یک حرفه‌ای تجربه کنید</p>
+          <a href="#" class="link-arrow">بیشتر بدانید</a>
+        </div>
+        <picture>
+          <source
+            type="image/webp"
+            srcset="/css/images/easy.webp 1x, /css/images/easy@2x.webp 2x" />
+          <source
+            type="image/jpg"
+            srcset="/css/images/easy.jpg 1x, /css/images/easy@2x.jpg 2x" />
+          <img class="feature__image" src="/css/images/easy@2x.JPG" alt=""
+        /></picture>
+      </article>
+    </section>
+    <section class="block block--dark block--skewed-right block-showcase">
+      <header class="block__header">
+        <h2>دسترسی آسان به موضوعات</h2>
+      </header>
+      <div class="container grid grid--1x2">
+        <picture class="block-showcase__image" data-aos="fade-left">
+          <source
+            type="image/webp"
+            srcset="/css/images/ipad.webp 1x, /css/images/ipad@2x.webp 2x" />
+          <source
+            type="image/PNG"
+            srcset="/css/images/ipad.PNG 1x, /css/images/ipad@2x.PNG 2x" />
+          <img src="css/images/ipad.PNG" alt=""
+        /></picture>
+        <ul class="list" data-aos="fade-up">
+          <li>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--primary">
+                  <use xlink:href="css/images/sprite.svg#wordpress"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title">اگر میخواهید به روز باشید</h3>
+                <p>
+                  هنگامی که راه‌حل‌هایی برای کاهش تهدیدات تعریف کردید، دارایی‌ها
+                  را دومرتبه ارزیابی کنید و تهدیداتی که ممکن است هنوز وجود داشته
+                  باشند، اما کشف نشده‌اند را شناسایی کنید. تهدیدهای باقی مانده
+                  به عنوان ریسک باقیمانده شناخته می‌شوند. بررسی این ریسک‌های
+                  باقیمانده برای مدیریت بسیار مهم...
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--primary">
+                  <use xlink:href="css/images/sprite.svg#wordpress"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title">اگر میخواهید به روز باشید</h3>
+                <p>
+                  هنگامی که راه‌حل‌هایی برای کاهش تهدیدات تعریف کردید، دارایی‌ها
+                  را دومرتبه ارزیابی کنید و تهدیداتی که ممکن است هنوز وجود داشته
+                  باشند، اما کشف نشده‌اند را شناسایی کنید. تهدیدهای باقی مانده
+                  به عنوان ریسک باقیمانده شناخته می‌شوند. بررسی این ریسک‌های
+                  باقیمانده برای مدیریت بسیار مهم...
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--primary">
+                  <use xlink:href="css/images/sprite.svg#wordpress"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title">اگر میخواهید به روز باشید</h3>
+                <p>
+                  هنگامی که راه‌حل‌هایی برای کاهش تهدیدات تعریف کردید، دارایی‌ها
+                  را دومرتبه ارزیابی کنید و تهدیداتی که ممکن است هنوز وجود داشته
+                  باشند، اما کشف نشده‌اند را شناسایی کنید. تهدیدهای باقی مانده
+                  به عنوان ریسک باقیمانده شناخته می‌شوند. بررسی این ریسک‌های
+                  باقیمانده برای مدیریت بسیار مهم...
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="block" data-aos="zoom-in">
+      <header class="block__header">
+        <h2>مشتری‌های ما چه می‌گویند؟</h2>
+        <p>با ما باشید تا بدانید دیگران چه تجربه‌ای از ما دارند</p>
+      </header>
+      <div class="container">
+        <div class="card testimonial">
+          <div class="grid grid--1x2">
+            <div class="testimonial__image">
+              <img
+                src="/css/images/testimonial.jpg"
+                alt="A happy, smiling customer"
+              />
+              <span class="icon-container">
+                <svg class="icon icon--primary icon--small">
+                  <use xlink:href="css/images/sprite.svg#quotes"></use>
+                </svg>
+              </span>
+            </div>
+            <blockquote class="quote">
+              <p class="quote__text">
+                دنیای دوربین این شماره جمع‌وجور‌تر از شماره‌های قبل است. به دو
+                مورد از تحقیقات محققان دانشگاه اِم‌آی‌تی اشاره خواهیم کرد. نخست
+                به یک قالی هوشمند می‌پردازیم که بدون نیاز به چشم می‌بیند. البته
+                برای کسب این توانایی، جهان را به او نشان داده‌اند تا یاد بگیرد.
+                بعد از آن، به یک روش...
+              </p>
+              <footer>
+                <div class="media">
+                  <div class="media__image">
+                    <svg class="icon icon--primary quote__line">
+                      <use xlink:href="css/images/sprite.svg#line"></use>
+                    </svg>
+                  </div>
+                  <div class="media__body">
+                    <h3 class="media__title quote__author">سیدمحمدجواد مدنی</h3>
+                    <p class="qoute__organization">مدیرعامل مجله دیجی‌تاورس</p>
+                  </div>
+                </div>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="block block--dark footer">
+      <div class="container grid footer__sections">
+        <section class="collapsible collapsible--expanded foooter__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">هوش مصنوعی</h2>
+            <svg class="icon icon--primary collapsible__chevron">
+              <use xlink:href="css/images/sprite.svg#line"></use>
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">نقشه راه هوش مصنوعی</a></li>
+              <li><a href="#">آخرین اخبار هوش مصنوعی</a></li>
+              <li><a href="#">آموزش هوش مصنوعی</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible foooter__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">متاورس</h2>
+            <svg class="icon icon--primary collapsible__chevron">
+              <use xlink:href="css/images/sprite.svg#line"></use>
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">نقشه راه هوش مصنوعی</a></li>
+              <li><a href="#">آخرین اخبار هوش مصنوعی</a></li>
+              <li><a href="#">آموزش هوش مصنوعی</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible foooter__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">داده‌کاوی</h2>
+            <svg class="icon icon--primary collapsible__chevron">
+              <use xlink:href="css/images/sprite.svg#line"></use>
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">نقشه راه هوش مصنوعی</a></li>
+              <li><a href="#">آخرین اخبار هوش مصنوعی</a></li>
+              <li><a href="#">آموزش هوش مصنوعی</a></li>
+            </ul>
+          </div>
+        </section>
+        <div class="footer__brand">
+          <img src="/css/images/LogoWeb.png" alt="" />
+          <p class="footer__copyright">حق کپی رایت محفوظ است</p>
+        </div>
+      </div>
+    </footer>
+    <script src="/js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
